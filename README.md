@@ -1,4 +1,5 @@
-### KuKyogi_UnivTuition
+### KuKyogi_UnivTuition - 대학등록금 분석 기사
 
 #### 건국대학교 교지편집위원회 데이터저널리즘 팀
 
+#### 
