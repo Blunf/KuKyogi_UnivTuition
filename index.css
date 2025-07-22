@@ -126,7 +126,7 @@ main {
     display: flex;
     width: 500vw; /* 5개 페이지 */
     transition: transform 0.5s ease;
-    background-color: #ffffff; /* 원하는 색상으로 변경 */
+
 }
 
 .slide {
