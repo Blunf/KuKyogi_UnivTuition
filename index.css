@@ -119,27 +119,72 @@ nav {
 main {
     overflow: hidden;
     width: 100vw;
+    
 }
 
 .main-slider {
     display: flex;
     width: 500vw; /* 5개 페이지 */
     transition: transform 0.5s ease;
+    background-color: #ffffff; /* 원하는 색상으로 변경 */
 }
 
 .slide {
     width: 100vw;
     min-height: 400px;
     flex-shrink: 0;
-    padding: 20px;
     box-sizing: border-box;
+
 }
 
 .slide:nth-child(1) { background-color: #f8f9fa; }
-.slide:nth-child(2) { background-color: #e9ecef; }
-.slide:nth-child(3) { background-color: #dee2e6; }
-.slide:nth-child(4) { background-color: #ced4da; }
-.slide:nth-child(5) { background-color: #adb5bd; }
+.slide:nth-child(2) { background-color: #f8f9fa; }
+.slide:nth-child(3) { background-color: #f8f9fa; }
+.slide:nth-child(4) { background-color: #f8f9fa; }
+.slide:nth-child(5) { background-color: #f8f9fa; }
+
+.LandingImg {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+.LandingImgContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+}
+.LandingText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 세로 중앙만 유지 */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+}
+.prewrap-text {
+    background-color: #f8f9fa;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.prewrap-text p {
+    white-space: pre-wrap; /* 띄어쓰기와 줄바꿈 유지 + 자동 줄바꿈 */
+    word-wrap: break-word; /* 긴 단어 강제 줄바꿈 */
+    overflow-wrap: break-word; /* 최신 브라우저 지원 */
+    line-height: 1.6; /* 줄간격 */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+}
 
 
 
@@ -178,7 +223,8 @@ main {
 
 /* FOOTER-------------------------------------------------------------------------------- */
 footer {
-    background-color: hsl(0, 0%, 100%);   
+    background-color: #f8f9fa;
+ 
     color: #000000;
     padding: 1px 0;
     text-align: center;
