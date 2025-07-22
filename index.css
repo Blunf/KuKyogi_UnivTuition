@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER -------------------------------------------------------------------------------- */
+header {
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.MainLogo {
+    width: 100px;
+    height: auto;
+    margin: 5px 10px 0 10px; 
+}   
+.SnsBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.SnsBtn img {
+    width: 36px;
+    height: auto;
+    opacity: 0.5;
+}           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV-------------------------------------------------------------------------------- */
+nav {
+    height: 30px;
+    background-color: hsla(0, 0%, 0%, 0.507);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN------------------------------------------------------------------------------------------------ */
+main {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.main-slider {
+    display: flex;
+    width: 500vw; /* 5개 페이지 */
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100vw;
+    min-height: 400px;
+    flex-shrink: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide:nth-child(1) { background-color: #f8f9fa; }
+.slide:nth-child(2) { background-color: #e9ecef; }
+.slide:nth-child(3) { background-color: #dee2e6; }
+.slide:nth-child(4) { background-color: #ced4da; }
+.slide:nth-child(5) { background-color: #adb5bd; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER-------------------------------------------------------------------------------- */
+footer {
+    background-color: hsl(0, 0%, 100%);   
+    color: #000000;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    
+}
+footer p {
+    margin-bottom: 0em;
+}
