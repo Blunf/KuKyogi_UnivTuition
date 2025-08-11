@@ -129,12 +129,17 @@ main {
 
 }
 
+
+
 .slide {
     width: 100vw;
-    min-height: 400px;
+    min-height: 200px;
     flex-shrink: 0;
     box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 필요시 align-items: center; 추가 가능 */
 }
 
 .slide:nth-child(1) { background-color: #ffffff; }
