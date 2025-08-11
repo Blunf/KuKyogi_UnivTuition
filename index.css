@@ -124,7 +124,7 @@ main {
 
 .main-slider {
     display: flex;
-    width: 500vw; /* 5ê°œ í˜ì´ì§€ */
+    width: 500vw; /* 5ê°? ?˜?´ì§? */
     transition: transform 0.5s ease;
 
 }
@@ -137,11 +137,11 @@ main {
 
 }
 
-.slide:nth-child(1) { background-color: #f8f9fa; }
-.slide:nth-child(2) { background-color: #f8f9fa; }
-.slide:nth-child(3) { background-color: #f8f9fa; }
-.slide:nth-child(4) { background-color: #f8f9fa; }
-.slide:nth-child(5) { background-color: #f8f9fa; }
+.slide:nth-child(1) { background-color: #ffffff; }
+.slide:nth-child(2) { background-color: #ffffff; }
+.slide:nth-child(3) { background-color: #ffffff; }
+.slide:nth-child(4) { background-color: #ffffff; }
+.slide:nth-child(5) { background-color: #ffffff; }
 
 .LandingImg {
     width: 100%;
@@ -160,7 +160,7 @@ main {
 .LandingText {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* ì„¸ë¡œ ì¤‘ì•™ë§Œ ìœ ì§€ */
+    transform: translateY(-50%); /* ¼öÁ÷ Áß¾Ó Á¤·Ä */
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
@@ -169,24 +169,38 @@ main {
     border-radius: 8px;
 }
 .prewrap-text {
-    background-color: #f8f9fa;
-    padding: 20px;
-    max-width: 100%;
-    box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 600px;    /* PC¿¡¼­ ÃÖ´ë ³Êºñ Á¦ÇÑ */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .prewrap-text {
+    max-width: 100%;   /* ¸ğ¹ÙÀÏ¿¡¼­´Â ²Ë Â÷°Ô */
+    padding: 16px;
+  }
 }
 
 .prewrap-text p {
-    white-space: pre-wrap; /* ë„ì–´ì“°ê¸°ì™€ ì¤„ë°”ê¿ˆ ìœ ì§€ + ìë™ ì¤„ë°”ê¿ˆ */
-    word-wrap: break-word; /* ê¸´ ë‹¨ì–´ ê°•ì œ ì¤„ë°”ê¿ˆ */
-    overflow-wrap: break-word; /* ìµœì‹  ë¸Œë¼ìš°ì € ì§€ì› */
-    line-height: 1.6; /* ì¤„ê°„ê²© */
+    white-space: pre-wrap; /* ÁÙ¹Ù²ŞÀ» À¯ÁöÇÏ¸é¼­ °ø¹éµµ À¯Áö */
+    word-wrap: break-word; /* ±ä ´Ü¾î´Â ÁÙ¹Ù²Ş */
+    overflow-wrap: break-word; /* ±ä ´Ü¾î´Â ÁÙ¹Ù²Ş */
+    line-height: 1.6; /* ÁÙ ³ôÀÌ */
     margin: 0;
     font-size: 1rem;
     font-weight: normal;
     text-align: left;
+    text-align: justify;
 }
 
-
+.prewrap-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0; /* ÀÌ¹ÌÁö¿Í ÅØ½ºÆ® »çÀÌÀÇ °£°İ */
+}
 
 
 
