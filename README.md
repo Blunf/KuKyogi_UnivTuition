@@ -1,6 +1,8 @@
 # WEB Kukyogi Univtuition
 
 대학교 등록금 관련 웹 프로젝트입니다.
+kukyogi-univtuition.vercel.app
+
 
 ## 프로젝트 구조
 
@@ -27,3 +29,4 @@
 3. 변경사항을 커밋합니다 (`git commit -am '새기능 추가'`)
 4. 브랜치에 푸시합니다 (`git push origin feature/새기능`)
 5. Pull Request를 생성합니다
+
