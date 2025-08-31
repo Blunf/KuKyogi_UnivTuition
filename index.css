@@ -36,7 +36,6 @@ header {
 .SnsBtn img {
     width: 36px;
     height: auto;
-    opacity: 0.5;
 }           
 
 
@@ -66,8 +65,8 @@ header {
 
 /* NAV-------------------------------------------------------------------------------- */
 nav {
-    height: 30px;
-    background-color: hsla(0, 0%, 0%, 0.507);
+    height: 5px;
+    background-color: hsla(0, 0%, 0%, 0.795);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +86,7 @@ nav {
 }
 
 .nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .nav-btn.active {
@@ -96,7 +95,17 @@ nav {
 }
 
 
-
+.nav-btn .long-label {
+  display: none;
+  white-space: pre-line;
+  
+}
+.nav-btn:hover .short-label {
+  display: none;
+}
+.nav-btn:hover .long-label {
+  display: inline;
+}
 
 
 
@@ -124,7 +133,7 @@ main {
 
 .main-slider {
     display: flex;
-    width: 500vw; /* 5ê°? ?˜?´ì§? */
+    width: 500vw; /* 5ï¿½? ?ï¿½ï¿½?ï¿½ï¿½ï¿½? */
     transition: transform 0.5s ease;
 
 }
@@ -139,7 +148,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* ÇÊ¿ä½Ã align-items: center; Ãß°¡ °¡´É */
+    /* ï¿½Ê¿ï¿½ï¿½ align-items: center; ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 }
 
 .slide:nth-child(1) { background-color: #ffffff; }
@@ -165,7 +174,7 @@ main {
 .LandingText {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* ¼öÁ÷ Áß¾Ó Á¤·Ä */
+    transform: translateY(-50%); /* ï¿½ï¿½ï¿½ï¿½ ï¿½ß¾ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
@@ -176,23 +185,23 @@ main {
 .prewrap-text {
   background-color: #ffffff;
   padding: 20px;
-  max-width: 600px;    /* PC¿¡¼­ ÃÖ´ë ³Êºñ Á¦ÇÑ */
+  max-width: 600px;    /* PCï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Êºï¿½ ï¿½ï¿½ï¿½ï¿½ */
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .prewrap-text {
-    max-width: 100%;   /* ¸ğ¹ÙÀÏ¿¡¼­´Â ²Ë Â÷°Ô */
+    max-width: 100%;   /* ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     padding: 16px;
   }
 }
 
 .prewrap-text p {
-    white-space: pre-wrap; /* ÁÙ¹Ù²ŞÀ» À¯ÁöÇÏ¸é¼­ °ø¹éµµ À¯Áö */
-    word-wrap: break-word; /* ±ä ´Ü¾î´Â ÁÙ¹Ù²Ş */
-    overflow-wrap: break-word; /* ±ä ´Ü¾î´Â ÁÙ¹Ù²Ş */
-    line-height: 1.6; /* ÁÙ ³ôÀÌ */
+    white-space: pre-wrap; /* ï¿½Ù¹Ù²ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸é¼­ ï¿½ï¿½ï¿½éµµ ï¿½ï¿½ï¿½ï¿½ */
+    word-wrap: break-word; /* ï¿½ï¿½ ï¿½Ü¾ï¿½ï¿½ ï¿½Ù¹Ù²ï¿½ */
+    overflow-wrap: break-word; /* ï¿½ï¿½ ï¿½Ü¾ï¿½ï¿½ ï¿½Ù¹Ù²ï¿½ */
+    line-height: 1.6; /* ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     margin: 0;
     font-size: 1rem;
     font-weight: normal;
@@ -204,7 +213,7 @@ main {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0; /* ÀÌ¹ÌÁö¿Í ÅØ½ºÆ® »çÀÌÀÇ °£°İ */
+    margin: 10px 0; /* ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 }
 
 
