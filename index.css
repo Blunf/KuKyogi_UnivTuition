@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER -------------------------------------------------------------------------------- */
+header {
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.MainLogo {
+    width: 100px;
+    height: auto;
+    margin: 5px 10px 0 10px; 
+}   
+.SnsBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.SnsBtn img {
+    width: 36px;
+    height: auto;
+    opacity: 0.5;
+}           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV-------------------------------------------------------------------------------- */
+nav {
+    height: 30px;
+    background-color: hsla(0, 0%, 0%, 0.507);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN------------------------------------------------------------------------------------------------ */
+main {
+    overflow: hidden;
+    width: 100vw;
+    
+}
+
+.main-slider {
+    display: flex;
+    width: 500vw; /* 5媛? ?럹?씠吏? */
+    transition: transform 0.5s ease;
+
+}
+
+
+
+.slide {
+    width: 100vw;
+    min-height: 200px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 필요시 align-items: center; 추가 가능 */
+}
+
+.slide:nth-child(1) { background-color: #ffffff; }
+.slide:nth-child(2) { background-color: #ffffff; }
+.slide:nth-child(3) { background-color: #ffffff; }
+.slide:nth-child(4) { background-color: #ffffff; }
+.slide:nth-child(5) { background-color: #ffffff; }
+
+.LandingImg {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+.LandingImgContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+}
+.LandingText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 수직 중앙 정렬 */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+}
+.prewrap-text {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 600px;    /* PC에서 최대 너비 제한 */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .prewrap-text {
+    max-width: 100%;   /* 모바일에서는 꽉 차게 */
+    padding: 16px;
+  }
+}
+
+.prewrap-text p {
+    white-space: pre-wrap; /* 줄바꿈을 유지하면서 공백도 유지 */
+    word-wrap: break-word; /* 긴 단어는 줄바꿈 */
+    overflow-wrap: break-word; /* 긴 단어는 줄바꿈 */
+    line-height: 1.6; /* 줄 높이 */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    text-align: justify;
+}
+
+.prewrap-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0; /* 이미지와 텍스트 사이의 간격 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER-------------------------------------------------------------------------------- */
+footer {
+    background-color: #ffffff;
+ 
+    color: #000000;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    
+}
+footer p {
+    margin-bottom: 0em;
+}
